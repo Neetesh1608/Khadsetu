@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KhadSetu — Farmer Login & Registration</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="auth-container">
+    <div class="auth-left">
+      <a href="index.html" class="brand-logo">
+        <div class="logo-icon">🌾</div>
+        KhadSetu
+      </a>
+      
+      <div class="left-content">
+        <h2>Secure Your<br>Fertilizer Today.</h2>
+        <p>Join over 1.2 Lakh farmers who book their seasonal fertilizers directly at government rates, avoiding middlemen and last-minute shortages.</p>
+        
+        <div class="trust-badge">
+          ✅ Designed for government integration
+        </div>
+      </div>
+    </div>
+
+    <div class="auth-right">
+      
+      <div id="login-form" class="form-wrapper">
+        <div class="form-header">
+          <h3>Welcome Back</h3>
+          <p>Enter your details to access your dashboard.</p>
+        </div>
+        <form id="form-login" novalidate>
+          <div class="input-group" id="group-login-phone">
+            <label for="login-phone">Mobile Number or Kisan ID</label>
+            <input type="text" id="login-phone" placeholder="e.g. 9876543210" autocomplete="off">
+            <span class="error-msg">Please enter a valid 10-digit mobile number.</span>
+          </div>
+          <div class="input-group" id="group-login-pin">
+            <label for="login-pin">6-Digit Security PIN</label>
+            <input type="password" id="login-pin" placeholder="••••••" maxlength="6">
+            <span class="error-msg">PIN must be exactly 6 numeric digits.</span>
+          </div>
+          <a href="#" class="forgot-link">Forgot PIN?</a>
+          <button type="submit" class="btn-submit" id="btn-login">Login Securely</button>
+        </form>
+        <div class="toggle-text">
+          New to KhadSetu? <a onclick="toggleForms()">Register as a Farmer</a>
+        </div>
+      </div>
+
+      <div id="register-form" class="form-wrapper hidden">
+        <div class="form-header">
+          <h3>Farmer Registration</h3>
+          <p>Create an account to book your fertilizers.</p>
+        </div>
+        <form id="form-register" novalidate>
+          <div class="input-group" id="group-reg-name">
+            <label for="reg-name">Full Name (As per Aadhaar)</label>
+            <input type="text" id="reg-name" placeholder="Ramesh Kumar">
+            <span class="error-msg">Please enter your full name.</span>
+          </div>
+          
+          <div class="row">
+            <div class="input-group" id="group-reg-phone">
+              <label for="reg-phone">Mobile Number</label>
+              <input type="tel" id="reg-phone" placeholder="10-digit number" maxlength="10">
+              <span class="error-msg">Valid 10-digit number required.</span>
+            </div>
+            <div class="input-group" id="group-reg-pin">
+              <label for="reg-pin">Create 6-Digit PIN</label>
+              <input type="password" id="reg-pin" placeholder="••••••" maxlength="6">
+              <span class="error-msg">Must be 6 digits.</span>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="input-group" id="group-reg-state">
+              <label for="reg-state">Farming State</label>
+              <select id="reg-state">
+                <option value="" disabled selected>Select State</option>
+                <option value="UP">Uttar Pradesh</option>
+                <option value="MP">Madhya Pradesh</option>
+                <option value="MH">Maharashtra</option>
+                <option value="PB">Punjab</option>
+                <option value="HR">Haryana</option>
+              </select>
+              <span class="error-msg">Please select your state.</span>
+            </div>
+            <div class="input-group" id="group-reg-crop">
+              <label for="reg-crop">Primary Crop</label>
+              <select id="reg-crop">
+                <option value="" disabled selected>Select Crop</option>
+                <option value="wheat">Wheat</option>
+                <option value="rice">Rice / Paddy</option>
+                <option value="sugarcane">Sugarcane</option>
+                <option value="cotton">Cotton</option>
+                <option value="other">Other</option>
+              </select>
+              <span class="error-msg">Please select a crop.</span>
+            </div>
+          </div>
+
+          <div class="input-group" id="group-reg-aadhaar">
+            <label for="reg-aadhaar">Aadhaar Number</label>
+            <input type="text" id="reg-aadhaar" placeholder="XXXX XXXX XXXX" maxlength="14">
+            <span class="error-msg">Please enter a valid 12-digit Aadhaar.</span>
+          </div>
+          
+          <button type="submit" class="btn-submit" id="btn-register">Verify & Register</button>
+        </form>
+        <div class="toggle-text">
+          Already have an account? <a onclick="toggleForms()">Login here</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
