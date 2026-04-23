@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KhadSetu — Fertilizer for Every Farmer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="landing.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a class="nav-logo" href="login.html">
+    <div class="logo-icon">🌾</div>
+    KhadSetu
+  </a>
+  <ul class="nav-links">
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#features">Features</a></li>
+    <li><a href="#testimonials">Farmers</a></li>
+  </ul>
+  <div class="nav-cta">
+    <button class="btn-ghost" onclick="goLogin()">Login</button>
+    <button class="btn-solid" onclick="goLogin()">Book Now</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+
+  <div class="hero-left">
+    <div class="hero-badge">
+      <span class="dot"></span>
+      Government Approved Platform · 2026
+    </div>
+    <h1 class="hero-title">
+      Fertilizers at<br>
+      <span class="highlight">Fair Price</span>,<br>
+      Every Season.
+    </h1>
+    <p class="hero-sub">
+      Book fertilizers before the season rush. Receive them at government-approved rates, directly at your door. No middlemen, no black market, no stress.
+    </p>
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="goLogin()">
+        🌱 Start Booking
+      </button>
+      <button class="btn-secondary-hero" onclick="document.getElementById('how').scrollIntoView({behavior:'smooth'})">
+        See How It Works →
+      </button>
+    </div>
+    <div class="hero-stats">
+      <div class="stat">
+        <div class="stat-num">1.2L+</div>
+        <div class="stat-label">Farmers Served</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">₹0</div>
+        <div class="stat-label">Extra Cost</div>
+      </div>
+      <div class="stat">
+        <div class="stat-num">28</div>
+        <div class="stat-label">States Covered</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="hero-right">
+    <div class="notif">
+      <div class="notif-icon">✅</div>
+      <div class="notif-text">
+        <strong>Booking Confirmed!</strong>
+        <span>Urea · 2 bags · ₹266</span>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="card-header">
+        <span class="card-title">My Kharif Booking</span>
+        <span class="card-season">Kharif 2026</span>
+      </div>
+
+      <div class="booking-item">
+        <div class="item-icon">🧪</div>
+        <div>
+          <div class="item-name">Urea <span class="item-badge">Govt. Rate</span></div>
+          <div class="item-qty">1 bags × 50 kg</div>
+        </div>
+        <div class="item-price">₹266</div>
+      </div>
+      <div class="booking-item">
+        <div class="item-icon">🌿</div>
+        <div>
+          <div class="item-name">DAP <span class="item-badge">Govt. Rate</span></div>
+          <div class="item-qty">1 bag × 50 kg</div>
+        </div>
+        <div class="item-price">₹1,350</div>
+      </div>
+      <div class="booking-item">
+        <div class="item-icon">🪨</div>
+        <div>
+          <div class="item-name">MOP <span class="item-badge">Govt. Rate</span></div>
+          <div class="item-qty">1 bag × 50 kg</div>
+        </div>
+        <div class="item-price">₹1,700</div>
+      </div>
+
+      <div class="card-footer">
+        <span class="total-label">Total Amount</span>
+        <span class="total-value">₹3,316</span>
+      </div>
+      <button class="book-btn" onclick="goLogin()">Confirm Booking →</button>
+    </div>
+
+    <div class="notif-2">
+      <div class="notif-icon">🚚</div>
+      <div class="notif-text">
+        <strong>Delivery Scheduled</strong>
+        <span>June 5, 2026 · On time</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST BAR -->
+<div class="trust-bar">
+  <div class="trust-item"><span class="tick">✓</span> Ministry of Agriculture Registered</div>
+  <div class="trust-item"><span class="tick">✓</span> Zero Middlemen Guaranteed</div>
+  <div class="trust-item"><span class="tick">✓</span> Government MRP Enforced</div>
+  <div class="trust-item"><span class="tick">✓</span> Secure UPI & Kisan Credit Card</div>
+  <div class="trust-item"><span class="tick">✓</span> Real-time Delivery Tracking</div>
+</div>
+
+<!-- HOW IT WORKS -->
+<section class="section" id="how">
+  <div style="text-align:center;">
+    <span class="section-tag reveal">How It Works</span>
+    <h2 class="section-title reveal reveal-delay-1" style="margin:0 auto; text-align:center;">
+      From Booking to<br>Your Field in 4 Steps
+    </h2>
+    <p class="section-sub reveal reveal-delay-2" style="margin:16px auto 0; text-align:center;">
+      Simple, transparent, and hassle-free. KhadSetu connects you directly to the supply chain.
+    </p>
+  </div>
+
+  <div class="steps-grid">
+    <div class="step reveal reveal-delay-1">
+      <div class="step-num">01</div>
+      <div class="step-icon">📱</div>
+      <h3>Register & Verify</h3>
+      <p>Sign up with your Aadhaar & kisan ID. One-time verification to unlock all benefits.</p>
+    </div>
+    <div class="step reveal reveal-delay-2">
+      <div class="step-num">02</div>
+      <div class="step-icon">📋</div>
+      <h3>Select & Book</h3>
+      <p>Choose fertilizer types and quantities for your crop. Book months in advance to secure your stock.</p>
+    </div>
+    <div class="step reveal reveal-delay-3">
+      <div class="step-num">03</div>
+      <div class="step-icon">💳</div>
+      <h3>Pay Securely</h3>
+      <p>Pay via UPI, NEFT, or Kisan Credit Card at government-approved MSP rates. No hidden fees.</p>
+    </div>
+    <div class="step reveal reveal-delay-4">
+      <div class="step-num">04</div>
+      <div class="step-icon">🚚</div>
+      <h3>Receive Delivery</h3>
+      <p>Your fertilizers arrive at your nearest pickup point on the scheduled date. Track live.</p>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="features">
+  <span class="section-tag reveal">Why KhadSetu</span>
+  <h2 class="section-title reveal reveal-delay-1">
+    Built for India's<br>Real Farmers
+  </h2>
+  <p class="section-sub reveal reveal-delay-2">
+    Every feature is designed around the challenges farmers actually face — from price gouging to last-minute shortages.
+  </p>
+
+  <div class="features-grid">
+    <div class="feature-card reveal reveal-delay-1">
+      <div class="feature-icon">📅</div>
+      <h3>Advance Season Booking</h3>
+      <p>Reserve your fertilizers 3–6 months before the season. Never scramble at the last moment again.</p>
+    </div>
+    <div class="feature-card reveal reveal-delay-2">
+      <div class="feature-icon">💰</div>
+      <h3>Guaranteed Govt. Pricing</h3>
+      <p>Every bag is sold at Ministry of Agriculture fixed MRP. Real-time price transparency for all products.</p>
+    </div>
+    <div class="feature-card reveal reveal-delay-3">
+      <div class="feature-icon">🔗</div>
+      <h3>Zero Black Market</h3>
+      <p>Direct supply chain from manufacturer to farmer. No dealer markups, no artificial scarcity.</p>
+    </div>
+    <div class="feature-card reveal reveal-delay-1">
+      <div class="feature-icon">📍</div>
+      <h3>Local Pickup Points</h3>
+      <p>3,000+ pickup centers across 28 states. Find the nearest one and collect on your date.</p>
+    </div>
+    <div class="feature-card reveal reveal-delay-2">
+      <div class="feature-icon">🌐</div>
+      <h3>Multilingual Support</h3>
+      <p>Available in Hindi, Marathi, Punjabi, Tamil, Telugu, and 12 more languages.</p>
+    </div>
+    <div class="feature-card reveal reveal-delay-3">
+      <div class="feature-icon">📊</div>
+      <h3>Crop-wise Recommendations</h3>
+      <p>AI-powered fertilizer recommendations based on your crop, soil, and district data.</p>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="testimonials" id="testimonials">
+  <div style="text-align:center;">
+    <span class="section-tag reveal">Farmer Stories</span>
+    <h2 class="section-title reveal reveal-delay-1" style="margin:0 auto; text-align:center;">
+      Real Farmers,<br>Real Impact
+    </h2>
+  </div>
+  <div class="testi-grid">
+    <div class="testi-card reveal reveal-delay-1">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">Pehle season mein Urea ke liye ₹500 extra deta tha. KhadSetu se pehli baar government rate mila aur time pe bhi mila. Bohot achha hai.</p>
+      <div class="testi-author">
+        <div class="author-avatar">👨‍🌾</div>
+        <div>
+          <div class="author-name">Ramesh Patel</div>
+          <div class="author-loc">📍 Vidisha, Madhya Pradesh</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal reveal-delay-2">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">My crop is on 8 acres. Earlier I had to buy from black market at 3x price. With KhadSetu I saved over ₹12,000 in one season alone.</p>
+      <div class="testi-author">
+        <div class="author-avatar">👨‍🌾</div>
+        <div>
+          <div class="author-name">Gurpreet Singh</div>
+          <div class="author-loc">📍 Ludhiana, Punjab</div>
+        </div>
+      </div>
+    </div>
+    <div class="testi-card reveal reveal-delay-3">
+      <div class="stars">★★★★★</div>
+      <p class="testi-text">App use karna bahut simple hai. Phone pe booking karo, pickup point se le lo. Delivery exact date pe aayi. Sarkar ka platform bahut trustworthy hai.</p>
+      <div class="testi-author">
+        <div class="author-avatar">👩‍🌾</div>
+        <div>
+          <div class="author-name">Sunita Devi</div>
+          <div class="author-loc">📍 Sitapur, Uttar Pradesh</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA SECTION -->
+<div class="cta-section reveal">
+  <div class="cta-text">
+    <h2>Ready to Farm<br>Without the Worry?</h2>
+    <p>Join 1.2 lakh+ farmers who have taken control of their fertilizer supply. Booking for Kharif 2026 is now open.</p>
+  </div>
+  <div class="cta-actions">
+    <button class="btn-cta-primary" onclick="goLogin()">🌱 Start Booking Free</button>
+    <button class="btn-cta-ghost" onclick="goLogin()">Login to Account</button>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-top">
+    <div class="footer-brand">
+      <div class="logo-text"><span>🌾</span> KhadSetu</div>
+      <p>India's most trusted fertilizer pre-booking platform. Empowering farmers with fair prices and timely delivery since 2024.</p>
+      <div class="socials">
+        <a href="#" class="social-btn">𝕏</a>
+        <a href="#" class="social-btn">f</a>
+        <a href="#" class="social-btn">in</a>
+        <a href="#" class="social-btn">▶</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Platform</h4>
+      <a href="#">Book Fertilizer</a>
+      <a href="#">Track Delivery</a>
+      <a href="#">Pickup Centers</a>
+      <a href="#">Crop Advisor</a>
+    </div>
+    <div class="footer-col">
+      <h4>Support</h4>
+      <a href="#">Help Center</a>
+      <a href="#">Contact Us</a>
+      <a href="#">Kisan Helpline</a>
+      <a href="#">Report an Issue</a>
+    </div>
+    <div class="footer-col">
+      <h4>Legal</h4>
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms of Service</a>
+      <a href="#">Refund Policy</a>
+      <a href="#">Government Notice</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 KhadSetu. All rights reserved.</span>
+    <span class="flag">🇮🇳 Made in India · Empowering Bharat's Farmers</span>
+  </div>
+</footer>
+
+<script src="landing.js"></script>
+</body>
+</html>
